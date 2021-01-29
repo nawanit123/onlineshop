@@ -14,7 +14,10 @@ const App = () => {
         <main className="py-3">
           <Container>
             <Route path="/" render={() => <HomeScreen />} exact />
-            <Route path="/product/:id" render={() => <ProductScreen />} />
+            <Route
+              path="/product/:id"
+              render={(routeProps) => <ProductScreen {...routeProps} />}
+            />
           </Container>
         </main>
         <Footer />

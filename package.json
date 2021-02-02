@@ -1,0 +1,14 @@
+{
+  "name": "onlineshop",
+  "version": "1.0.0",
+  "description": "Online Shopping App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "author": "Nawanit Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -1,13 +1,14 @@
 {
   "name": "onlineshop",
   "version": "1.0.0",
+  "type": "module",
   "description": "Online Shopping App",
   "main": "server.js",
   "scripts": {
     "start": "node backend/server",
     "server": "nodemon backend/server",
     "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"yarn run server\" \"yarn run client\""
   },
   "author": "Nawanit Sharma",
   "license": "ISC",

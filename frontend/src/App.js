@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
+import CartScreen from './screens/CartScreen';
 
 const App = () => {
   return (
@@ -17,6 +18,10 @@ const App = () => {
             <Route
               path="/product/:id"
               render={(routeProps) => <ProductScreen {...routeProps} />}
+            />
+            <Route
+              path="/cart/:id?"
+              render={(routeProps) => <CartScreen {...routeProps} />}
             />
           </Container>
         </main>

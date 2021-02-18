@@ -10,6 +10,7 @@ import LoginScreen from './screens/LoginScreen';
 import RegisterScreen from './screens/RegisterScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import ShippingScreen from './screens/ShippingScreen';
+import PaymentScreen from './screens/PaymentScreen';
 
 const App = () => {
   return (
@@ -21,6 +22,10 @@ const App = () => {
             <Route
               path="/shipping"
               render={(routeProps) => <ShippingScreen {...routeProps} />}
+            />
+            <Route
+              path="/payment"
+              render={(routeProps) => <PaymentScreen {...routeProps} />}
             />
             <Route
               path="/login"

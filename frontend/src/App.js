@@ -11,6 +11,7 @@ import RegisterScreen from './screens/RegisterScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import ShippingScreen from './screens/ShippingScreen';
 import PaymentScreen from './screens/PaymentScreen';
+import PlaceOrderScreen from './screens/PlaceOrderScreen';
 
 const App = () => {
   return (
@@ -26,6 +27,10 @@ const App = () => {
             <Route
               path="/payment"
               render={(routeProps) => <PaymentScreen {...routeProps} />}
+            />
+            <Route
+              path="/placeorder"
+              render={(routeProps) => <PlaceOrderScreen {...routeProps} />}
             />
             <Route
               path="/login"
